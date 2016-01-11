@@ -22,7 +22,7 @@ public class CalcFrame extends JFrame
 		this.setContentPane(basePanel);
 		this.setLocationRelativeTo(null);
 		this.setResizable(false);
-		this.setSize(400, 600);
+		this.setSize(300, 260);
 		this.setTitle(" Pleb OS | Calculator");
 		this.setVisible(true);
 	}
