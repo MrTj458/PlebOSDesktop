@@ -66,6 +66,7 @@ public class PosFrame extends JFrame
 		optionsMenu.add(settingsSubMenu); //Adds the settings sub-menu to the Options tab.
 		
 		//Adds all of the options in the settings sub-menu.
+		//The settings sub-menu will be replaced with a settings panel once the sub-menu gets overcrowded.
 		settingsSubMenu.add(whiteSetting);
 		settingsSubMenu.add(graySetting);
 		settingsSubMenu.add(randomSetting);
