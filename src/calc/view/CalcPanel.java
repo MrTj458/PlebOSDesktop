@@ -1,16 +1,24 @@
 package calc.view;
 
-import javax.swing.*;
-import calc.controller.CalcController;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SpringLayout;
+import javax.swing.SwingConstants;
+
+import calc.controller.CalcController;
 
 public class CalcPanel extends JPanel
 {
 	private CalcController baseCalcController;
 	private SpringLayout baseLayout;
 	private JLabel numberLabel;
-	private JButton num1, num2, num3, num4, num5, num6, num7, num8, num9, num0, funcPlus, funcMinus, funcMultiply, funcDivide, funcEquals;
+	private JButton num1, num2, num3, num4, num5, num6, num7, num8, num9, num0, funcPlus, funcMinus, funcMultiply, funcDivide, funcEquals, clearButton;
 	
 	public CalcPanel(CalcController baseCalcController)
 	{
@@ -32,6 +40,10 @@ public class CalcPanel extends JPanel
 		funcMultiply = new JButton("*");
 		funcDivide = new JButton("/");
 		funcEquals = new JButton("=");
+		clearButton = new JButton("Clear");
+		baseLayout.putConstraint(SpringLayout.NORTH, clearButton, 6, SpringLayout.SOUTH, funcEquals);
+		baseLayout.putConstraint(SpringLayout.WEST, clearButton, 117, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.EAST, clearButton, 2, SpringLayout.EAST, num0);
 
 
 		
@@ -59,6 +71,7 @@ public class CalcPanel extends JPanel
 		this.add(funcMultiply);
 		this.add(funcDivide);
 		this.add(funcEquals);
+		this.add(clearButton);
 	}
 	
 	private void setupLayout()
@@ -121,6 +134,140 @@ public class CalcPanel extends JPanel
 	
 	private void setupListeners()
 	{
+		num0.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
 		
+		num1.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		num2.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		num3.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		num4.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		num5.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		num6.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		num7.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		num8.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		num9.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				numberClicked(9);
+			}
+		});
+		
+		funcPlus.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		funcMinus.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		funcMultiply.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		funcDivide.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+		
+		funcEquals.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				
+			}
+		});
+	}
+	
+	private void numberClicked(double number)
+	{
+		baseCalcController.getCalculator().setNum1((baseCalcController.getCalculator().getNum1() * 10) + number);
+		refresh();
+	}
+	
+	private void functionClicked(String function)
+	{
+		
+	}
+	
+	private void refresh()
+	{
+		numberLabel.setText(Double.toString(baseCalcController.getCalculator().getNum1()));
 	}
 }
