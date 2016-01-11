@@ -1,6 +1,7 @@
 package pos.controller;
 
 import pos.view.*;
+import calc.controller.*;
 
 import javax.swing.JPanel;
 
@@ -43,6 +44,12 @@ public class PosController
 		//Sets the content pane of the frame to the main menu and enables the menu.
 		baseFrame.changePanel(mainMenu, true);
 		System.out.println("Main menu");
+	}
+	
+	public void launchCalc()
+	{
+		CalcController calculator = new CalcController();
+		calculator.start();
 	}
 	
 	/**

@@ -20,6 +20,8 @@ public class PosFrame extends JFrame
 {
 	private PosController baseController;
 	private JMenuBar menuBar;
+	private JMenu appsMenu;
+	private JMenuItem calcButton;
 	private JMenu optionsMenu;
 	private JMenu settingsSubMenu;
 	private JMenuItem whiteSetting, graySetting, randomSetting;
@@ -30,6 +32,8 @@ public class PosFrame extends JFrame
 		this.baseController = baseController;
 		menuBar = new JMenuBar();
 		
+		appsMenu = new JMenu("Apps");
+		calcButton = new JMenuItem("Calculator");
 		optionsMenu = new JMenu("Options");
 		settingsSubMenu = new JMenu("Settings");
 		whiteSetting = new JMenuItem("WhiteBackground");
@@ -60,10 +64,16 @@ public class PosFrame extends JFrame
 	 */
 	private void setupMenu()
 	{
-		
 		this.setJMenuBar(menuBar); //Adds the JMenuBar to this frame
+		
+		menuBar.add(appsMenu); //Adds the Apps tab to the top of the menu.
 		menuBar.add(optionsMenu); //Adds the Options tab at the top of the menu.
-		optionsMenu.add(settingsSubMenu); //Adds the settings sub-menu to the Options tab.
+		
+		//Adds all of the options to the appsMenu tab.
+		appsMenu.add(calcButton);
+		
+		//Adds all of the objects to the options tab.
+		optionsMenu.add(settingsSubMenu);
 		
 		//Adds all of the options in the settings sub-menu.
 		//The settings sub-menu will be replaced with a settings panel once the sub-menu gets overcrowded.
@@ -120,6 +130,14 @@ public class PosFrame extends JFrame
 			{
 				System.out.println("Exit Clicked");
 				System.exit(0);
+			}
+		});
+		
+		calcButton.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				baseController.launchCalc();
 			}
 		});
 	}
