@@ -11,6 +11,11 @@ public class PosMainMenu extends JPanel
 	private JLabel placeHolder;
 	private JMenuBar menuBar;
 	
+	/**
+	 * This class will be the main menu for the whole program.
+	 * It will be the connection between all apps added to this program.
+	 * @param baseController
+	 */
 	public PosMainMenu(PosController baseController)
 	{
 		baseLayout = new SpringLayout(); 
@@ -33,7 +38,7 @@ public class PosMainMenu extends JPanel
 	{
 		baseLayout.putConstraint(SpringLayout.NORTH, placeHolder, 293, SpringLayout.NORTH, this);
 		baseLayout.putConstraint(SpringLayout.WEST, placeHolder, 274, SpringLayout.WEST, this);
-		setBackground(Color.GREEN);
+		setBackground(Color.WHITE);
 	}
 	
 	private void setupListeners()

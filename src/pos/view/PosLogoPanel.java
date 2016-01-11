@@ -4,6 +4,11 @@ import pos.controller.PosController;
 import javax.swing.*;
 import java.awt.Color;
 
+/**
+ * This class is the logo panel.
+ * This class will hold the logo and company information later on.
+ * @author MrTj458
+ */
 public class PosLogoPanel extends JPanel
 {
 	private SpringLayout baseLayout;
@@ -30,7 +35,8 @@ public class PosLogoPanel extends JPanel
 	{
 		baseLayout.putConstraint(SpringLayout.NORTH, placeholder, 293, SpringLayout.NORTH, this);
 		baseLayout.putConstraint(SpringLayout.WEST, placeholder, 262, SpringLayout.WEST, this);
-		setBackground(Color.RED);
+		setBackground(Color.BLUE);
+		placeholder.setForeground(Color.PINK);
 	}
 
 }
