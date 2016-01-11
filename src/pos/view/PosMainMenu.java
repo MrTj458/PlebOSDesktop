@@ -9,12 +9,14 @@ public class PosMainMenu extends JPanel
 	private SpringLayout baseLayout;
 	private PosController baseController;
 	private JLabel placeHolder;
+	private JMenuBar menuBar;
 	
 	public PosMainMenu(PosController baseController)
 	{
 		baseLayout = new SpringLayout(); 
 		this.baseController = baseController;
 		placeHolder = new JLabel("Main Menu");
+		menuBar = new JMenuBar();
 		
 		setupPanel();
 		setupLayout();

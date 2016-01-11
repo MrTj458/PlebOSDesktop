@@ -20,7 +20,7 @@ public class PosController
 	
 	public void start()
 	{
-		baseFrame.changePanel(logoPanel);
+		baseFrame.changePanel(logoPanel, false);
 		try
 		{
 			Thread.sleep(3000);
@@ -30,7 +30,7 @@ public class PosController
 		{
 			System.out.println("Error");
 		}
-		baseFrame.changePanel(mainMenu);
+		baseFrame.changePanel(mainMenu, true);
 	}
 	
 	public PosGlobalVariables getVariable()
