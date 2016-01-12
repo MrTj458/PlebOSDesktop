@@ -10,7 +10,7 @@ public class CalcCalculator
 	{
 		this.num1 = 0;
 		this.num2 = 0;
-		function = "+";
+		function = "";
 	}
 	
 	public void functionClicked(String function)
@@ -60,13 +60,6 @@ public class CalcCalculator
 		{
 			num1 = num2 / num1;
 		}
-	}
-
-	public double multiply()
-	{
-		num1 = num1 * num2;
-		num2 = 0;
-		return num1;
 	}
 	
 	public double getNum1()

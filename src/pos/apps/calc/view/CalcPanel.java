@@ -263,7 +263,7 @@ public class CalcPanel extends JPanel
 			{
 				baseCalcController.getCalculator().setNum1(0);
 				baseCalcController.getCalculator().setNum2(0);
-				baseCalcController.getCalculator().setFunction("+");
+				baseCalcController.getCalculator().setFunction("");
 				refresh();
 			}
 		});
