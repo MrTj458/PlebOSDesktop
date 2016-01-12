@@ -1,4 +1,4 @@
-package pos.model;
+package pos.main.model;
 
 /**
  * This class holds variables that all classes can access.

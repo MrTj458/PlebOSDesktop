@@ -1,4 +1,4 @@
-package pos.controller;
+package pos.main.controller;
 
 public class PosRunner
 {

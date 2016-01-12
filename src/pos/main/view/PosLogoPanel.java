@@ -1,7 +1,9 @@
-package pos.view;
+package pos.main.view;
 
-import pos.controller.PosController;
+import pos.main.controller.PosController;
+
 import javax.swing.*;
+
 import java.awt.Color;
 
 /**

@@ -1,8 +1,8 @@
-package calc.view;
+package pos.apps.calc.view;
 
 import javax.swing.JFrame;
 
-import calc.controller.CalcController;
+import pos.apps.calc.controller.CalcController;
 
 public class CalcFrame extends JFrame
 {

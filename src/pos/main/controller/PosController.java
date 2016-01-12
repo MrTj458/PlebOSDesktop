@@ -1,11 +1,10 @@
-package pos.controller;
-
-import pos.view.*;
-import calc.controller.*;
+package pos.main.controller;
 
 import javax.swing.JPanel;
 
-import pos.model.PosGlobalVariables;
+import pos.apps.calc.controller.*;
+import pos.main.model.PosGlobalVariables;
+import pos.main.view.*;
 
 /**
  * This class is the main controller for the program.

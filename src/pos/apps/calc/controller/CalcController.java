@@ -1,7 +1,7 @@
-package calc.controller;
+package pos.apps.calc.controller;
 
-import calc.view.*;
-import calc.model.*;
+import pos.apps.calc.model.*;
+import pos.apps.calc.view.*;
 
 public class CalcController
 {

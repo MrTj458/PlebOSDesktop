@@ -1,4 +1,4 @@
-package calc.model;
+package pos.apps.calc.model;
 
 public class CalcCalculator
 {

@@ -1,4 +1,4 @@
-package pos.view;
+package pos.main.view;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -10,7 +10,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
-import pos.controller.PosController;
+import pos.main.controller.PosController;
 
 /**
  * This calss is the Frame for all of the GUI components.

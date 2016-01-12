@@ -1,4 +1,4 @@
-package calc.view;
+package pos.apps.calc.view;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
-import calc.controller.CalcController;
+import pos.apps.calc.controller.CalcController;
 
 public class CalcPanel extends JPanel
 {
