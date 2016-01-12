@@ -14,10 +14,7 @@ public class CalcController
 		calcFrame = new CalcFrame(this);
 	}
 	
-	public void start()
-	{
-		
-	}
+	public void start(){}
 	
 	public CalcCalculator getCalculator()
 	{
