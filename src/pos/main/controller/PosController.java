@@ -2,9 +2,12 @@ package pos.main.controller;
 
 import javax.swing.JPanel;
 
-import pos.apps.calc.controller.*;
+import pos.apps.calc.controller.CalcController;
+import pos.apps.magic8.controller.Magic8Controller;
 import pos.main.model.PosGlobalVariables;
-import pos.main.view.*;
+import pos.main.view.PosFrame;
+import pos.main.view.PosLogoPanel;
+import pos.main.view.PosMainMenu;
 
 /**
  * This class is the main controller for the program.
@@ -49,6 +52,12 @@ public class PosController
 	{
 		CalcController calculator = new CalcController();
 		calculator.start();
+	}
+	
+	public void launchMagic8()
+	{
+		Magic8Controller magic8 = new Magic8Controller();
+		magic8.start();
 	}
 	
 	/**

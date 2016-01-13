@@ -22,6 +22,7 @@ public class PosFrame extends JFrame
 	private JMenuBar menuBar;
 	private JMenu appsMenu;
 	private JMenuItem calcButton;
+	private JMenuItem magic8Button;
 	private JMenu optionsMenu;
 	private JMenu settingsSubMenu;
 	private JMenuItem whiteSetting, graySetting, randomSetting;
@@ -34,6 +35,7 @@ public class PosFrame extends JFrame
 		
 		appsMenu = new JMenu("Apps");
 		calcButton = new JMenuItem("Calculator");
+		magic8Button = new JMenuItem("Magic 8 Ball");
 		optionsMenu = new JMenu("Options");
 		settingsSubMenu = new JMenu("Settings");
 		whiteSetting = new JMenuItem("WhiteBackground");
@@ -71,6 +73,7 @@ public class PosFrame extends JFrame
 		
 		//Adds all of the options to the appsMenu tab.
 		appsMenu.add(calcButton);
+		appsMenu.add(magic8Button);
 		
 		//Adds all of the objects to the options tab.
 		optionsMenu.add(settingsSubMenu);
@@ -138,6 +141,16 @@ public class PosFrame extends JFrame
 			public void actionPerformed(ActionEvent click)
 			{
 				baseController.launchCalc();
+				System.out.println("Launching calculator");
+			}
+		});
+		
+		magic8Button.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				baseController.launchMagic8();
+				System.out.println("launching magic 8 ball");
 			}
 		});
 	}
