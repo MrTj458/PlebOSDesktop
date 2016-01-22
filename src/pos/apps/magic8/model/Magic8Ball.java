@@ -20,6 +20,11 @@ public class Magic8Ball
 		answerList.add("Maybe");
 		answerList.add("Most definately.");
 		answerList.add("Ask again later.");
+		answerList.add("You need to talk to someone aboot that.");
+		answerList.add("You want some mapel suyrup eh?");
+		answerList.add("It's not going to be like that Trevor.");
+		answerList.add("dflskdlfks;kldfsdfjkls");
+		answerList.add("adskfjklsdfj");
 	}
 	
 	public String getAnswer()
