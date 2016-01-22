@@ -19,6 +19,7 @@ public class Magic8Frame extends JFrame
 	private void setupFrame()
 	{
 		this.setContentPane(baseMagicPanel);
+		this.setLocationRelativeTo(null);
 		this.setResizable(false);
 		this.setSize(400,400);
 		this.setTitle("Magic 8 Ball");
